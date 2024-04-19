@@ -1,0 +1,67 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body { 
+  background-image: url("../img/moon3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #e7ecf4;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+h1{
+  font-size: 60px;
+}
+/* h2{
+  background-color: #393979;
+  margin-right: 600px;
+  margin-left: 600px;
+  border-radius: 5px;
+  padding: 8px 0;
+  -webkit-box-shadow:0px 0px 105px 30px rgba(187,216,179,0.21);
+-moz-box-shadow: 0px 0px 105px 30px rgba(187,216,179,0.21);
+box-shadow: 0px 0px 105px 30px rgba(187,216,179,0.21);
+font-size: 35px; 
+}*/
+section {
+  text-align: center;
+  margin-top: 200px;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.button1{
+padding:0.35em 1.2em;
+border: transparent;
+margin:0 0.3em 0.3em 0;
+border: 2px solid #e7ecf4;
+border-radius: 5px;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color: #e7ecf4;
+text-align:center;
+transition: all 0.2s;
+background-color: transparent;
+font-size: 20px;
+}
+.button1:hover{
+color:#000000;
+background-color:#FFFFFF;
+}
