@@ -6,9 +6,18 @@ document.querySelector('#check').addEventListener('click', function(event) {
 
     if (zodiacSign) {
         document.querySelector('#placeToSee').innerText = "Your Zodiac Sign is: " + zodiacSign;
+        document.getElementById('reset').style.display = 'inline'; // Show the reset button
     } else {
         document.querySelector('#placeToSee').innerText = "Invalid date or not in range.";
     }
+});
+
+document.querySelector('#reset').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default behavior of the button click
+
+    document.getElementById('birthDay').value = ''; // Clear the input field
+    document.querySelector('#placeToSee').innerText = ''; // Clear the displayed zodiac sign
+    document.getElementById('reset').style.display = 'none'; // Hide the reset button again
 });
 
 function getZodiacSign(dateString) {
