@@ -1,8 +1,10 @@
-document.querySelector('#check').addEventListener('click', function(event) {
+const onClick = (event) => {
     event.preventDefault(); // Prevents the default behavior of the button click
 
-    let birthDate = document.getElementById('birthDay').value;
-    let zodiacSign = getZodiacSign(birthDate);
+
+
+    const birthDate = document.getElementById('birthDay').value;
+    const zodiacSign = getZodiacSign(birthDate);
 
     if (zodiacSign) {
         document.querySelector('#placeToSee').innerText = "Your Zodiac Sign is: " + zodiacSign;
@@ -10,7 +12,8 @@ document.querySelector('#check').addEventListener('click', function(event) {
     } else {
         document.querySelector('#placeToSee').innerText = "Invalid date or not in range.";
     }
-});
+}
+document.querySelector('#check').addEventListener('click', onClick)
 
 document.querySelector('#reset').addEventListener('click', function(event) {
     event.preventDefault(); // Prevents the default behavior of the button click
