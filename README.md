@@ -1,2 +1,2 @@
 # Zodiac-Sign
- A web app that alows the user to enter thier birthday and find out thier zodiac sign
+ A web app that allows the user to enter their birthday and find out their zodiac sign
